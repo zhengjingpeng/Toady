@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#6080F1">
+            <ImageView
+                android:id="@+id/tv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"/>
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="图片列表"
+                android:textSize="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <ImageButton
+                android:id="@+id/ib1"
+                android:layout_width="60dp"
+                android:layout_height="65dp"
+                android:background="@drawable/newsblue"
+                android:layout_weight="1"/>
+            <ImageButton
+                android:id="@+id/ib2"
+                android:layout_width="60dp"
+                android:layout_height="65dp"
+                android:background="@drawable/questionblue"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"/>
+            <ImageButton
+                android:id="@+id/ib3"
+                android:layout_width="60dp"
+                android:layout_height="65dp"
+                android:background="@drawable/piclan"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"/>
+            <ImageButton
+                android:id="@+id/ib4"
+                android:layout_width="60dp"
+                android:layout_height="65dp"
+                android:background="@drawable/tiebalan"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <Gallery
+            android:id="@+id/gl_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Gallery>
+
+    </LinearLayout>
+
+
+</LinearLayout>
