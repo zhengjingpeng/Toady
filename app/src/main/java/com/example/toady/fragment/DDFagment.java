@@ -27,8 +27,8 @@ public class DDFagment extends BaseFragment {
         imgDate=new int[]{R.drawable.mm1,R.drawable.mm2,R.drawable.mm3,R.drawable.mm4,R.drawable.mm5};
 
         MyAdapter myAdapter=new MyAdapter();
-        Gallery gallery=rootview.findViewById(R.id.gl_pic);
-        gallery.setAdapter(myAdapter);
+       /* Gallery gallery=rootview.findViewById(R.id.gl_pic);
+        gallery.setAdapter(myAdapter);*/
         return rootview;
     }
     class MyAdapter extends BaseAdapter {

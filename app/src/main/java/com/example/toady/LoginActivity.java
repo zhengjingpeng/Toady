@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.toady.Utils.LoginUtils;
+import com.example.toady.fragment.MeFragment;
 
 import java.util.Map;
 
@@ -80,8 +81,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 if(mEdLoginNumber.getText().toString().equals(userInfo.get("account"))&&
                         mEdLoginPassword.getText().toString().equals(userInfo.get("psw"))){
                     Toast.makeText(getApplicationContext(),"登陆成功",Toast.LENGTH_SHORT).show();
-                    Intent intent=new Intent(getApplicationContext(),MainActivity.class);
-                    startActivity(intent);
+                 /*   Intent intent=new Intent(getApplicationContext(), MeFragment.class);
+                    intent.putExtra("account",account);
+                    setResult(1,intent);
+                   startActivity(intent);*/
+                 Intent intent=new Intent();
+                 intent.putExtra("name",account);
+                 setResult(2,intent);
+                 finish();
                 }else{
                     Toast.makeText(getApplicationContext(),"登陆失败",Toast.LENGTH_SHORT).show();
                 }

@@ -1,71 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#70CAFC"
+    android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="#6080F1">
-            <ImageView
-                android:id="@+id/tv_logo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/logo"/>
-            <TextView
-                android:id="@+id/tv_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="图片列表"
-                android:textSize="25dp"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"/>
-        </RelativeLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp">
-            <ImageButton
-                android:id="@+id/ib1"
-                android:layout_width="60dp"
-                android:layout_height="65dp"
-                android:background="@drawable/newsblue"
-                android:layout_weight="1"/>
-            <ImageButton
-                android:id="@+id/ib2"
-                android:layout_width="60dp"
-                android:layout_height="65dp"
-                android:background="@drawable/questionblue"
-                android:layout_marginLeft="20dp"
-                android:layout_weight="1"/>
-            <ImageButton
-                android:id="@+id/ib3"
-                android:layout_width="60dp"
-                android:layout_height="65dp"
-                android:background="@drawable/piclan"
-                android:layout_marginLeft="20dp"
-                android:layout_weight="1"/>
-            <ImageButton
-                android:id="@+id/ib4"
-                android:layout_width="60dp"
-                android:layout_height="65dp"
-                android:background="@drawable/tiebalan"
-                android:layout_marginLeft="20dp"
-                android:layout_weight="1"/>
-        </LinearLayout>
-        <Gallery
-            android:id="@+id/gl_pic"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:text="高明区"
+            android:id="@+id/city"
+            android:textColor="#fff"
+            android:textSize="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大部多云"
+            android:id="@+id/duoyun"
+            android:textColor="#fff"
+            android:layout_gravity="center_horizontal"
+            android:textSize="23dp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="26"
+            android:id="@+id/wendu"
+            android:textSize="90dp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/wendu"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:text="o"/>
 
-        </Gallery>
+
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/iv"
+        android:src="@drawable/biz_plugin_weather_qing"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/week"
+            android:text="星期天"
+            android:textSize="30dp"
+            android:textColor="#fff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2019-04-28"
+            android:id="@+id/riqi"
+            android:textSize="30dp"
+            android:textColor="#fff"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/qing"
+            android:text="晴"
+            android:textSize="30dp"
+            android:textColor="#fff"/>
 
     </LinearLayout>
 
+</LinearLayout>
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lv">
+
+</android.support.v7.widget.RecyclerView>
 
 </LinearLayout>
