@@ -1,8 +1,7 @@
 package com.example.toady.Utils;
 
-import com.example.toady.R;
 import com.example.toady.fragment.BaseFragment;
-import com.example.toady.fragment.DDFagment;
+import com.example.toady.fragment.WeatherFagment;
 import com.example.toady.fragment.MainFragment;
 import com.example.toady.fragment.MeFragment;
 import com.example.toady.fragment.NewFagment;
@@ -25,7 +24,7 @@ public class FargmentCash {
                 baseFragment=new NewFagment();
                 break;
             case Constans.PAGER_DD:
-                baseFragment=new DDFagment();
+                baseFragment=new WeatherFagment();
                 break;
             case Constans.PAGER_ME:
                 baseFragment=new MeFragment();

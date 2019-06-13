@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#F14583"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_tv_day"
+    android:layout_marginLeft="20dp"
+    android:textColor="#FFFFFF"
+    android:text="2019-06-12"
+    android:textSize="23dp"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/item_iv"
+        android:src="@drawable/yujiaxue6"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:id="@+id/item_tv_wendu"
+        android:layout_marginLeft="60dp"
+        android:text="30-25"
+        android:textSize="25dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,7 +1,6 @@
 package com.example.toady;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -12,10 +11,6 @@ import android.widget.RadioGroup;
 import com.example.toady.Utils.Constans;
 
 import com.example.toady.adapter.VpAdapt;
-import com.example.toady.fragment.DDFagment;
-import com.example.toady.fragment.MainFragment;
-import com.example.toady.fragment.MeFragment;
-import com.example.toady.fragment.NewFagment;
 
 public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener, ViewPager.OnPageChangeListener {
 
