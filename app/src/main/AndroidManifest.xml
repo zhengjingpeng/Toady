@@ -18,9 +18,10 @@
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ShouchangActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            ></activity>
+        <activity android:name=".CaiActivity"></activity>
+        <activity
+            android:name=".ShouchangActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".NewsActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
@@ -39,9 +40,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" >
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
