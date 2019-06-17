@@ -232,6 +232,8 @@ public class WeatherFagment extends BaseFragment {
                     String s=response.body().string();
                     Log.i("ssssss",s);
                     WeatherBean weatherBean=gson.fromJson(s,WeatherBean.class);
+
+
                     final WeatherBean.ResultBean.RealtimeBean realtime = weatherBean.getResult().getRealtime();
                     list=weatherBean.getResult().getFuture();
                     getActivity().runOnUiThread(new Runnable() {

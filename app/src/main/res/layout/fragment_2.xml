@@ -1,6 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/cai_bg"
     android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="95dp"
+    >
 
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="50dp"
+            android:text="菜谱大全"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="#fff" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:id="@+id/cai_name"
+            android:hint="菜名"
+           android:background="@drawable/radius"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="bottom" />
+
+        <EditText
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/cai_number"
+            android:hint="数量"
+           android:background="@drawable/radius"
+            android:layout_gravity="bottom" />
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/cai_btn"
+            android:background="@drawable/radius"
+            android:text="搜索"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cai_rv"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        >
+
+    </android.support.v7.widget.RecyclerView>
 </LinearLayout>
