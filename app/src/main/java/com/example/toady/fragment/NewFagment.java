@@ -1,5 +1,6 @@
 package com.example.toady.fragment;
 
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.telecom.Call;
@@ -80,9 +81,9 @@ public class NewFagment extends BaseFragment {
                     getActivity().runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getActivity());
-                            linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-                            recyclerView.setLayoutManager(linearLayoutManager);
+                            GridLayoutManager gridLayoutManager=new GridLayoutManager(getActivity(),2);
+                            gridLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+                            recyclerView.setLayoutManager(gridLayoutManager);
                             CaiRvAappter adapter=new CaiRvAappter(getActivity(),list);
                             recyclerView.setAdapter(adapter);
                         }

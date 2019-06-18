@@ -8,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:layout_marginTop="95dp"
+    android:layout_marginTop="70dp"
     >
 
 
@@ -31,6 +31,7 @@
             android:layout_height="50dp"
             android:id="@+id/cai_name"
             android:hint="菜名"
+            android:text="白菜"
            android:background="@drawable/radius"
             android:layout_marginLeft="20dp"
             android:layout_gravity="bottom" />
@@ -41,6 +42,7 @@
             android:layout_marginLeft="15dp"
             android:id="@+id/cai_number"
             android:hint="数量"
+            android:text="5"
            android:background="@drawable/radius"
             android:layout_gravity="bottom" />
         <Button
