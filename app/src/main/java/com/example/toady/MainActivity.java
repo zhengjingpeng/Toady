@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         initListen();
 
         mMainRbtnHome.setChecked(true);
+        mvp.setOffscreenPageLimit(3);
         mMainGp.setOnCheckedChangeListener(this);
         VpAdapt vpAdapt=new VpAdapt(supportFragmentManager);
         mvp.setAdapter(vpAdapt);
@@ -63,6 +64,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         mMainRbtnMe = (RadioButton) findViewById(R.id.main_rbtn_me);
         mMainGp = (RadioGroup) findViewById(R.id.main_gp);
         mvp=findViewById(R.id.main_vp);
+
     }
 
     @Override

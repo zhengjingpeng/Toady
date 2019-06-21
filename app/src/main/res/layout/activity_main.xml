@@ -17,7 +17,7 @@
     </android.support.v4.view.ViewPager>
     <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:id="@+id/main_gp"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal">
@@ -37,7 +37,7 @@
             android:gravity="center_horizontal"
             android:drawableTop="@drawable/select2"
             android:layout_weight="1"
-            android:text="视频"
+            android:text="菜谱"
             android:button="@null"/>
         <RadioButton
             android:layout_width="0dp"
@@ -46,7 +46,7 @@
             android:drawableTop="@drawable/select3"
             android:gravity="center_horizontal"
             android:layout_weight="1"
-            android:text="消息"
+            android:text="天气"
             android:button="@null"/>
         <RadioButton
             android:layout_width="40dp"
